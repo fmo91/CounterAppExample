@@ -21,10 +21,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func addButtonPressed() {
-        counterValue += 1
+        counterValue += 2
     }
 
     @IBAction func subButtonPressed() {
-        counterValue -= 1
+        counterValue -= 2
     }
 }
