@@ -8,12 +8,23 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet var counterLabel: UILabel!
+
+    var counterValue = 0 {
+        didSet {
+            counterLabel.text = "\(counterValue)"
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
+    @IBAction func addButtonPressed() {
+        counterValue += 1
+    }
 
+    @IBAction func subButtonPressed() {
+        counterValue -= 1
+    }
 }
-
